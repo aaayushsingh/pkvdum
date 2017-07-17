@@ -82,7 +82,7 @@ app.listen(app.get('port'), function() {
 app.get('/',function(req,res){
 	console.log(req.method+" request received at "+req.url);
 	
-	res.sendFile('/index.html');
+	res.sendFile(__dirname+'/ls.html');
 });
 
 
