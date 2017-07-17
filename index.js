@@ -24,7 +24,7 @@ var logStdout = process.stdout;
 // Process application/json
 app.use(bodyParser.json());
 
-//static files
+//static files directory
 app.use(express.static(__dirname+'/required/'));
 app.set('port', (process.env.PORT || 8080));
 
